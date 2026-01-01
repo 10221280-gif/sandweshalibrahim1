@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>ساندوش الابراهيم</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #fff8f0;
+      text-align: center;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #c70000, #ff0000);
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    header img {
+      width: 55px;
+      border-radius: 10px;
+    }
+
+    nav {
+      margin: 15px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    nav button {
+      background: white;
+      color: #c70000;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover,
+    nav button.active {
+      background: #c70000;
+      color: white;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .menu.hidden {
+      display: none;
+    }
+
+    .dish {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .dish:hover {
+      transform: scale(1.04);
+    }
+
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .dish p {
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    h2 {
+      grid-column: 1 / -1;
+      color: #c70000;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #c70000;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    #welcome {
+      background: white;
+      padding: 30px;
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    #welcome img {
+      width: 120px;
+      margin-top: 15px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  
+  <img src="WhatsApp Image 2025-12-29 at 3.46.52 PM.jpeg" alt="لوغو ساندوش الابراهيم">
+  <h1>ساندوش الابراهيم</h1>
+</header>
+
+<nav>
+  <button onclick="showSection('sandwich')">السندوش</button>
+  <button onclick="showSection('snack')">السناك</button>
+  <button onclick="showSection('burger')">البرغر</button>
+  <button onclick="showSection('offers')">العروضات</button>
+  <button onclick="showSection('shawarma')">الشاورما</button>
+  <button onclick="showSection('drinks')">المشروبات</button>
+  <button onclick="showSection('potato')">البطاطا</button>
+  <button onclick="showSection('extras')">الإضافات</button>
+</nav>
+
+<!-- السندوش -->
+<section id="sandwich" class="menu hidden">
+  <h2>🥙 السندوش</h2>
+
+  <div class="dish"><img src="images/sandwich.jpg"><p>نقانق – 270000</p></div>
+  <div class="dish"><img src="images/sandwich.jpg"><p>سجق – 270000</p></div>
+  <div class="dish"><img src="images/sandwich.jpg"><p>طاوق – 250000</p></div>
+  <div class="dish"><img src="images/sandwich.jpg"><p>بطاطا – 120000</p></div>
+  <div class="dish"><img src="C:\Users\pc.cc\OneDrive\Desktop\sandesh ibrahim\swar\WhatsApp Image 2025-12-30 at 11.21.07 AM (4).jpeg"><p>كرسبي – 250000</p></div>
+  <div class="dish"><img src="C:\Users\pc.cc\OneDrive\Desktop\sandesh ibrahim\swar\WhatsApp Image 2025-12-29 at 3.40.31 PM.jpeg"><p>فهيتا – 350000</p></div>
+  <div class="dish"><img src="images/sandwich.jpg"><p>زنغر – 300000</p></div>
+  <div class="dish"><img src="C:\Users\pc.cc\OneDrive\Desktop\sandesh ibrahim\swar\WhatsApp Image 2025-12-30 at 11.21.08 AM.jpeg"><p>تشيز طاوق – 350000</p></div>
+</section>
+
+<!-- السناك -->
+<section id="snack" class="menu hidden">
+  <h2>🍽️ السناك</h2>
+
+  <div class="dish"><img src="WhatsApp Image 2025-12-30 at 11.21.07 AM.jpeg"><p>صحن كريزي كسبي – 300000</p></div>
+  <div class="dish"><img src="images/snack.jpg"><p>بروستد – 1000000</p></div>
+  <div class="dish"><img src="images/snack.jpg"><p>كرسبي – 540000</p></div>
+  <div class="dish"><img src="images/snack.jpg"><p>شورما – 540000</p></div>
+  <div class="dish"><img src="images/snack.jpg"><p>فهيتا – 350000</p></div>
+  <div class="dish"><img src="WhatsApp Image 2025-12-29 at 3.40.23 PM.jpeg"><p>كبة مشوية 12 حبة – 1000000</p></div>
+  <div class="dish"><img src="images/snack.jpg"><p>كبة مقلية – 600000</p></div>
+  <div class="dish"><img src="C:\Users\pc.cc\OneDrive\Desktop\sandesh ibrahim\swar\WhatsApp Image 2025-12-29 at 3.40.29 PM.jpeg"><p>ورق عنب صحن 8قطع – 300000</p></div>
+</section>
+
+<!-- البرغر -->
+<section id="burger" class="menu hidden">
+  <h2>🍔 البرغر</h2>
+
+  <div class="dish"><img src="WhatsApp Image 2025-12-30 at 11.21.07 AM (1).jpeg"><p>غولد برغر – 400000</p></div>
+  <div class="dish"><img src="C:\Users\pc.cc\OneDrive\Desktop\sandesh ibrahim\swar\WhatsApp Image 2025-12-29 at 3.40.31 PM (1).jpeg"><p>برغر لحم – 300000</p></div>
+  <div class="dish"><img src="WhatsApp Image 2025-12-29 at 3.42.13 PM.jpeg"><p>برغر دجاج – 250000</p></div>
+  <div class="dish"><img src="WhatsApp Image 2025-12-29 at 3.40.09 PM.jpeg"><p>برغر سكلوب – 400000</p></div>
+  <div class="dish"><img src="WhatsApp Image 2025-12-29 at 3.40.19 PM.jpeg"><p>تشيز برغر – 360000</p></div>
+  <div class="dish"><img src="C:\Users\pc.cc\OneDrive\Desktop\sandesh ibrahim\swar\WhatsApp Image 2025-12-30 at 11.21.07 AM (2).jpeg"><p>دبل برغر – 450000</p></div>
+  <div class="dish"><img src="WhatsApp Image 2025-12-29 at 3.40.27 PM.jpeg"><p>ابراهيم برغر – 400000</p></div>
+</section>
+
+<!-- الشاورما -->
+<section id="shawarma" class="menu hidden">
+  <h2>🌯 الشاورما</h2>
+
+  <div class="dish"><img src="images/shawarma.jpg"><p>شاورما دجاج كبير – 200000</p></div>
+  <div class="dish"><img src="images/shawarma.jpg"><p>شاورما دجاج صغير – 150000</p></div>
+  <div class="dish"><img src="WhatsApp Image 2025-12-29 at 3.40.32 PM.jpeg"><p>شاورما لحم كبير – 300000</p></div>
+  <div class="dish"><img src="WhatsApp Image 2025-12-29 at 3.40.32 PM.jpeg"><p>شاورما لحم صغير – 180000</p></div>
+  <div class="dish"><img src="WhatsApp Image 2025-12-29 at 3.40.36 PM.jpeg"><p>شاورما تركيه دجاج – 400000</p></div>
+</section>
+
+<!-- المشروبات -->
+<section id="drinks" class="menu hidden">
+  <h2>🥤 المشروبات</h2>
+
+  <div class="dish"><img src="images/drinks.jpg"><p>بيبسي صغير – 60000</p></div>
+  <div class="dish"><img src="images/drinks.jpg"><p>بيبسي تنك – 70000</p></div>
+  <div class="dish"><img src="images/drinks.jpg"><p>ماء صغير – 30000</p></div>
+  <div class="dish"><img src="images/drinks.jpg"><p>ماء كبير – 40000</p></div>
+</section>
+
+<!-- البطاطا -->
+<section id="potato" class="menu hidden">
+  <h2>🍟 البطاطا</h2>
+
+  <div class="dish"><img src="images/potato.jpg"><p>علبة صغيرة – 100000</p></div>
+  <div class="dish"><img src="images/potato.jpg"><p>علبة وسط – 200000</p></div>
+  <div class="dish"><img src="images/potato.jpg"><p>علبة كبيرة – 300000</p></div>
+</section>
+
+<!-- الإضافات -->
+<section id="extras" class="menu hidden">
+  <h2>✨ الإضافات</h2>
+
+  <div class="dish"><img src="images/extras.jpg"><p>علبة صوص صغيرة – 50000</p></div>
+  <div class="dish"><img src="images/extras.jpg"><p>علبة صوص كبيرة – 100000</p></div>
+</section>
+
+<section id="welcome">
+  <h2>ساندوش الابراهيم يرحب بكم</h2>
+  <p>نحن بخدمتكم يوميًا ❤️</p>
+  <img src="WhatsApp Image 2025-12-29 at 3.46.52 PM.jpeg">
+</section>
+
+<footer>
+  © 2025 سناك الابراهيم
+</footer>
+
+<script>
+  function showSection(sectionId) {
+    document.querySelectorAll('.menu').forEach(sec => sec.classList.add('hidden'));
+    document.getElementById(sectionId).classList.remove('hidden');
+
+    document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+  }
+</script>
+
+</body>
+</html
